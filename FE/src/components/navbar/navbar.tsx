@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
-import logo from '../../assets/logo2.jpg'
+import logo from '../../assets/logo.jpg'
+import logo3 from '../../assets/logo3.jpg'
+import './style.css'
 
 const Navbar = () => {
   return (
-    <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
-      <Link to="/" style={{ marginRight: "1rem" }}><img src={logo} alt="" /></Link>
-      <Link to="/" style={{ marginRight: "1rem" }}>Home</Link>
-      <Link to="/blog" style={{ marginRight: "1rem" }}>Blog</Link>
-      <Link to="/admin">Admin</Link>
+    <nav className='navbar'>
+      <Link to="/" ><img src={logo3} alt="" /></Link>
+      <div className="items">
+        <Link to="/" >MASSOTERAPIA</Link>
+        <Link to="/contatti">CONTATTI</Link>
+        <Link to="/newsletter">NEWSLETTER</Link>
+      </div>
     </nav>
   );
 };

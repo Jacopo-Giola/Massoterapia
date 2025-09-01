@@ -16,7 +16,7 @@ const Blog = () => {
 
   return (
     <div>
-      <h1>Blog</h1>
+      <h1>NEWSLETTER</h1>
       {articles.length === 0 && <p>Nessun articolo disponibile.</p>}
       {articles.map((a) => (
         <div key={a.id} style={{ borderBottom: "1px solid #ddd", marginBottom: "1rem" }}>
